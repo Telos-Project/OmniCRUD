@@ -89,3 +89,13 @@ event.
 
 OmniCRUD entanglement is when rules for two values in separate JSON mapped databases are enforced
 to keep them aligned, if not identical, when one of them is altered.
+
+#### 2.2.3 - Applications
+
+##### 2.2.3.1 - Agnostic Scripts
+
+Agnostic scripts are scripts for a system which may be written in any language. As such, rather
+than interacting with said system through environmental variables and functions, the scripts,
+written as function bodies, return an OmniCRUD query as a JSON string, which executes upon the
+state of said system (said state itself represented as JSON), the results of which are then passed
+to the same script as a JSON string upon its next execution.
