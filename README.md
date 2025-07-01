@@ -72,8 +72,8 @@ may serve to specify access permissions.
 
 A JSON query is a JSON object with the fields "type", containing a string specifying the operation
 (as "create", "read", "update", or "delete"), and "target", containing a target JSON object
-specifying the alias or address of the database to enact the query on. Optionally, a JSON query
-object may have a "properties" field, containing a miscellaneous value.
+specifying the target to enact the query on. Optionally, a JSON query object may have a
+"properties" field, containing a miscellaneous value.
 
 An update query shall also have the field "transform", containing a JSON transform format object to
 apply to the selected values.
